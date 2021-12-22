@@ -1,7 +1,7 @@
 from PIL import Image
 import mss
 import numpy as np
-def getCellsPIL():
+def getCells():
     # each cell is a 64x64 pixel RGB image
     top = 261
     left = 8
