@@ -1,3 +1,6 @@
 .classpath
 .project
 *.png
+__pycache__
+data
+stateModel
