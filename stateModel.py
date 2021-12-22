@@ -4,7 +4,8 @@ from keras.layers import Conv2D, MaxPooling2D
 from keras.layers import Activation, Dropout, Flatten, Dense
 from keras import backend as K
 from tensorflow import keras
-
+# all copied from https://keras.io/examples/vision/image_classification_from_scratch/
+# Keras Cats vs Dogs example, and modified slightly to fit with my use case
 def train(samples, epochs):
 
     train_data_dir = 'data/train'
@@ -36,7 +37,6 @@ def train(samples, epochs):
                 optimizer='rmsprop',
                 metrics=['accuracy'])
 
-    # this is the augmentation configuration we will use for training
     train_datagen = ImageDataGenerator()
 
     train_generator = train_datagen.flow_from_directory(
