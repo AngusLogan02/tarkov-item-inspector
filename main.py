@@ -3,11 +3,20 @@ import image
 import mouse
 import time
 import keyboard
+import os
 
 #stateModel.train(550, 200)
+print("Loading...")
 model = stateModel.loadModel()
+os.system("cls")
+print("+----------------------------------------------------------------------------------------------+")
+print("| Press 'Shift + T' to inspect from a trader's inventory, and 'Shift + Q' to quit the program. |")
+print("| Ready to inspect.                                                                            |")
+print("+--------------------------------------------------------------------------------------------- +")
+print()
 
 def trader():
+    print("STARTING TRADER INSPECTION")
     cell, coord = image.getCellsTrader()
     for i in range(0, len(cell)):
         prediction = model.predict(cell[i])
