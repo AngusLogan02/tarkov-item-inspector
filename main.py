@@ -13,7 +13,7 @@ def welcomeMessage():
     print("| mode.                                                                                        |")
     print("|                                                                                              |")
     print("| Press 'Shift + T' to inspect from a trader's inventory, and 'Shift + Q' to quit the program. |")
-    print("| Ready to inspect.                                                                            |")
+    print("| Loading complete. Ready to inspect.                                                          |")
     print("+----------------------------------------------------------------------------------------------+")
     print()
 
